@@ -1,15 +1,19 @@
 <template>
   <div class="hello">
-    Hello Vue
+    <Header></Header>
   </div>
 </template>
 
 <script>
+import Header from './components/Header'
 export default {
   name: 'HelloWorld',
   data () {
     return {
     }
+  },
+  components: {
+    Header
   }
 }
 </script>
