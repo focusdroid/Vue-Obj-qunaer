@@ -7,7 +7,7 @@ import fastClick from 'fastclick'
 import '../static/css/reset.css'// 清楚默認邊距
 import '../static/css/border.css'// 清除移動端border問題
 
-fastClick.attach(document.body)
+fastClick.attach(document.body)// 防止事件延迟
 
 Vue.config.productionTip = false
 
