@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <p>23132</p>
+    Hello Vue
   </div>
 </template>
 
@@ -18,8 +18,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .hello{
-  p {
-    font-size:30px;
-  }
+    font-size:0.15rem;
 }
 </style>

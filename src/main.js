@@ -3,6 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import fastClick from 'fastclick'
+import '../static/css/reset.css'// 清楚默認邊距
+import '../static/css/border.css'// 清除移動端border問題
+
+fastClick.attach(document.body)
 
 Vue.config.productionTip = false
 
