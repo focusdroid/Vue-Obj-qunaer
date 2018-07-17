@@ -16,15 +16,18 @@ export default {
   data () {
     return {
       swiperOption: {
-        pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination', // 显示下面的小圆点
         loop: true
       },
       swiperList: [{
         id: '0001',
         imgUrl: 'https://source.qunarzz.com/site/images/wap/home/recommend/iphoneplus/dujia_shuqi_banner_20180710.jpg'
       }, {
-        id: '0001',
+        id: '0002',
         imgUrl: 'https://source.qunarzz.com/site/images/wap/home/recommend/iphoneplus/anquan_20180716.png'
+      }, {
+        id: '0003',
+        imgUrl: 'https://source.qunarzz.com/site/images/wap/home/recommend/iphoneplus/20180713_CPM_11053.jpg'
       }]
     }
   }
