@@ -2,12 +2,14 @@
   <div class="hello">
     <Header></Header>
     <HomeSwiper></HomeSwiper>
+    <Icons></Icons>
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
 import HomeSwiper from './components/Swiper'
+import Icons from './components/Icons'
 export default {
   name: 'HelloWorld',
   data () {
@@ -16,7 +18,8 @@ export default {
   },
   components: {
     Header,
-    HomeSwiper
+    HomeSwiper,
+    Icons
   }
 }
 </script>
