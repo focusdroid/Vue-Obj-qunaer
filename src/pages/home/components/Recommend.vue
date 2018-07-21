@@ -66,6 +66,7 @@ export default {
     height: 1.9rem;
     overflow: hidden;
     margin-top: .2rem;
+    padding-bottom: .2rem;
     .item-img-wrapper{
       padding:.1rem;
       .item-img {
