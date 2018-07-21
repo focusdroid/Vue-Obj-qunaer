@@ -7,7 +7,6 @@
     <Weekend></Weekend>
   </div>
 </template>
-
 <script>
 import Header from './components/Header'
 import HomeSwiper from './components/Swiper'

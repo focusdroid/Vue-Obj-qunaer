@@ -57,11 +57,9 @@ export default {
     background: #eee;
     text-indent: .2rem;
     font-size: .25rem;
-    margin-top: .2rem;
     padding: .15rem 0;
   }
   .item{
-    margin-top: .2rem;
     padding-bottom: .2rem;
     .item-img-wrapper{
       height:0;

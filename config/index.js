@@ -10,7 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: { // url公共配置，请求时使用
+    proxyTable: { // url公共配置，请求时使用  webpack-dev-server提供的方法
       '/api': {
         target: 'http://localhost:8080',
         pathRewrite: {
