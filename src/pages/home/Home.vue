@@ -3,6 +3,7 @@
     <Header></Header>
     <HomeSwiper></HomeSwiper>
     <Icons></Icons>
+    <Recommend></Recommend>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from './components/Header'
 import HomeSwiper from './components/Swiper'
 import Icons from './components/Icons'
+import Recommend from './components/Recommend'
 export default {
   name: 'HelloWorld',
   data () {
@@ -19,7 +21,8 @@ export default {
   components: {
     Header,
     HomeSwiper,
-    Icons
+    Icons,
+    Recommend
   }
 }
 </script>
