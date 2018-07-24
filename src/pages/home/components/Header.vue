@@ -8,7 +8,9 @@
         输入城市/经典/主题
         <!--<input type="text">-->
       </div>
-      <div class="header-right">{{this.city}} <span class="iconfont">&#xe64a;</span></div>
+      <router-link to="/city">
+        <div class="header-right">北京{{this.city}} <span class="iconfont">&#xe64a;</span></div>
+      </router-link>
     </div>
 </template>
 
@@ -28,11 +30,11 @@ export default {
   @import '~@/assets/varibles.styl'
 .header {
   display: flex;
-  height: 0.86rem;
+  height: $headerHeight;
   font-size: 0.3rem;
   background: $bgColor;
   color: #fff;
-  line-height 0.86rem;
+  line-height $headerHeight;
   font-size:.28rem;
   .header-left {
     width: 0.8rem;
@@ -57,6 +59,7 @@ export default {
     width: 1.24rem;
     float right;
     text-align center;
+    color: #fff;
     span{
       font-size .24rem;
     }
