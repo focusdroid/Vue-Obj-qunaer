@@ -1,10 +1,10 @@
 <template>
   <div class="hello">
-    <Header></Header>
-    <HomeSwiper></HomeSwiper>
-    <Icons></Icons>
-    <Recommend></Recommend>
-    <Weekend></Weekend>
+    <Header :city="city"></Header>
+    <HomeSwiper :list="swiperList"></HomeSwiper>
+    <Icons :iconList="iconList"></Icons>
+    <Recommend :recommendList="recommendList"></Recommend>
+    <Weekend :weekendList="weekendList"></Weekend>
   </div>
 </template>
 <script>
@@ -19,6 +19,11 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
+      city: '',
+      swiperList: [],
+      iconList: [],
+      recommendList: [],
+      weekendList: []
     }
   },
   components: {
@@ -35,6 +40,13 @@ export default {
     getHomeInfo () {
       axios.get('api/index.json').then((res) => {
         console.log(res)
+        if (res.data.ret) {
+          this.city = res.data.city
+          this.swiperList = res.data.data.swiperList
+          this.iconList = res.data.data.iconList
+          this.recommendList = res.data.data.recommendList
+          this.weekendList = res.data.data.weekendList
+        }
       }).then()
     }
   }

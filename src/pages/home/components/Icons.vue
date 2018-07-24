@@ -40,7 +40,8 @@ export default {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
-        loop: false
+        loop: false,
+        autoplay: false
       }
     }
   },
