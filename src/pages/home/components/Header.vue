@@ -8,12 +8,13 @@
         输入城市/经典/主题
         <!--<input type="text">-->
       </div>
-      <div class="header-right">城市 <span class="iconfont">&#xe64a;</span></div>
+      <div class="header-right">{{this.city}} <span class="iconfont">&#xe64a;</span></div>
     </div>
 </template>
 
 <script>
 export default {
+  props: ['city'],
   data () {
     return {
       age: 12

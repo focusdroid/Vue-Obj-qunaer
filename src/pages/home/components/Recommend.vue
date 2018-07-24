@@ -2,7 +2,7 @@
   <div class="recommend">
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item in recommentList" :key="item.id">
+      <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgUrl" :alt="item.title">
         </div>
@@ -18,34 +18,11 @@
 
 <script>
 export default {
+  props: {
+    recommendList: Array
+  },
   data () {
     return {
-      recommentList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/57/57a1490e1b72901a90.img.jpg_200x200_84df18bd.jpg',
-          title: '华清爱琴海温泉',
-          desc: '华清爱琴海温泉'
-        },
-        {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1412/89/66dadfb4d982e6f88abad45a3e062342.water.jpg_200x200_0443bc40.jpg',
-          title: '曲江海洋极地公园',
-          desc: '曲江海洋极地公园'
-        },
-        {
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/18/18ffcca94b1b7ca2.water.jpg_110x110_8feea658.jpg',
-          title: '长恨歌',
-          desc: '长恨歌'
-        },
-        {
-          id: '0004',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1602/de/de8400021b664c5390.img.jpg_110x110_346ca766.jpg',
-          title: '华清宫（华清池·骊山）(5A)',
-          desc: '华清宫（华清池·骊山）(5A)'
-        }
-      ]
     }
   }
 }
