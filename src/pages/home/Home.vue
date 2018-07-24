@@ -39,7 +39,6 @@ export default {
   methods: {
     getHomeInfo () {
       axios.get('api/index.json').then((res) => {
-        console.log(res)
         if (res.data.ret) {
           this.city = res.data.city
           this.swiperList = res.data.data.swiperList
