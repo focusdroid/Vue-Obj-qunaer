@@ -1,14 +1,17 @@
 <template>
     <div class="city">
       <Header></Header>
+      <Search></Search>
     </div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Search from './components/Search'
 export default {
   components: {
-    Header
+    Header,
+    Search
   }
 }
 </script>
