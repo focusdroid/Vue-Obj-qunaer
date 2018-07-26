@@ -1,5 +1,8 @@
 <template>
-  <div class="list" ref="wrapper" id="wrapper">
+  <div class="lists" ref="wrapper" id="wrapper">
+    <div >
+
+    </div>
     <div class="area">
       <div class="title border-topbottom">当前城市</div>
       <div class="button-list">
@@ -80,6 +83,9 @@ export default {
       border-color: #ccc;
     }
   }
+    .wrapper{
+      height:100%
+    }
     .list{
       position: absolute;
       top:1.78rem
