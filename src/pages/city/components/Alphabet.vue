@@ -1,19 +1,16 @@
 <template>
     <div>
       <ul class="list">
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
+        <li class="item" v-for="(item, key) in cities" :key="item.id">{{key}}</li>
       </ul>
     </div>
 </template>
 
 <script>
 export default {
+  props: {
+    cities: Object
+  }
 }
 </script>
 
@@ -21,7 +18,7 @@ export default {
 @import '../../../assets/varibles.styl'
   .list{
     position: fixed
-    top: 1.78rem
+    top:3.3rem
     right:0
     width: .4rem
     display: flex
