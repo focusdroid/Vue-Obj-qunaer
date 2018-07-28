@@ -2,8 +2,8 @@
     <div class="city">
       <Header></Header>
       <Search></Search>
-      <List :cities="cities" :hotCities="hotCities"></List>
-      <Alphabet :cities="cities" ></Alphabet>
+      <List :letter="letter" :cities="cities" :hotCities="hotCities"></List>
+      <Alphabet @change="handChange" :cities="cities" ></Alphabet>
     </div>
 </template>
 
@@ -17,7 +17,8 @@ export default {
   data () {
     return {
       cities: {},
-      hotCities: []
+      hotCities: [],
+      letter: ''
     }
   },
   components: {
@@ -38,6 +39,9 @@ export default {
           this.hotCities = res.data.data.hotCities
         }
       })
+    },
+    handChange (value) {
+      this.letter = value
     }
   }
 }

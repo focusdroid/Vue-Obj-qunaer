@@ -1,7 +1,12 @@
 <template>
     <div>
       <ul class="list">
-        <li class="item" v-for="(item, key) in cities" :key="item.id">{{key}}</li>
+        <li
+          class="item"
+          v-for="(item, key) in cities"
+          :key="item.id"
+          @click="heandler"
+        >{{key}}</li>
       </ul>
     </div>
 </template>
@@ -10,6 +15,11 @@
 export default {
   props: {
     cities: Object
+  },
+  methods: {
+    heandler (e) {
+      this.$emit('change', e.target.innerText)
+    }
   }
 }
 </script>
